@@ -4,7 +4,7 @@ permalink:      /:year-:month-:day/:title
 # Setup
 title:          Tale
 paginate:       5
-baseurl:        "/kimsangyeon"
+baseurl:        "/kimsangyeon.github.io"
 url:            "https://kimsangyeon.github.io"
 
 # Assets
