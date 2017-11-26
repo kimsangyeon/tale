@@ -4,8 +4,8 @@ permalink:      /:year-:month-:day/:title
 # Setup
 title:          Tale
 paginate:       5
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+baseurl:        "/kimsangyeon"
+url:            "https://kimsangyeon.github.io"
 
 # Assets
 sass:
@@ -17,14 +17,14 @@ markdown:       kramdown
 
 # About
 author:
-  name:         Chester How
-  url:          http://chester.how
-  email:        chesterhow@gmail.com
+  name:         Kimsnagyeon
+  url:          http://github.com/kimsangyeon
+  email:        aaa51057419@gmail.com
 
 # Custom vars
 version:        3.4.1
 github:
-  repo:         https://github.com/chesterhow/tale
+  repo:         https://github.com/kimsangyeon/kimsangyeon.github.io
 
 # Gems
 plugins:
