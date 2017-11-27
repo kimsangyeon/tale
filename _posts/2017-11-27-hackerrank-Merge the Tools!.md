@@ -44,6 +44,5 @@ if __name__ == '__main__':
 
 <br>
 <br>
-<br>
 
 [Hacker Rank > Python > String > Merge the Tools! ](https://www.hackerrank.com/challenges/merge-the-tools/copy-from/59294080)
