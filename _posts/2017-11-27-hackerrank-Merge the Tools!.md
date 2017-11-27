@@ -5,6 +5,7 @@ author: "Yeon"
 ---
 
 # hacker rank
+---
 ## Python Practice
 ### Merge the Tools!
 
@@ -41,5 +42,8 @@ if __name__ == '__main__':
     merge_the_tools(string, k)  
 ```
 
+<br>
+<br>
+<br>
 
 [Hacker Rank > Python > String > Merge the Tools! ](https://www.hackerrank.com/challenges/merge-the-tools/copy-from/59294080)
