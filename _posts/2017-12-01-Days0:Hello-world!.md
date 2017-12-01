@@ -11,9 +11,9 @@ author: "Yeon"
 
 Input Format
 
-| Data Type     | Parameter         | Description                                                         |
-| :------------ | :---------------: | ------------------------------------------------------------------: |
-| string        | parameter valiable| A single line of text containing one or more space-separated words. |
+| Data Type | Parameter | Description |
+| :-------- | :-------: | ----------: |
+| string    | parameter valiable| A single line of text containing one or more space-separated words. |
 
 Output Format
 
