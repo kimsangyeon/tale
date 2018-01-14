@@ -53,16 +53,16 @@ this.charecter = new Charecter({
 이미지 그리기
 ### Image draw
 ```javascript 
-this.options.context.drawImage(
-    this.options.image,
-    this.options.frameIndex * this.options.width,
+this.context.drawImage(
+    this.image,
+    this.frameIndex * this.width,
     0,
-    this.options.width,
-    this.options.height,
-    this.options.x,
-    this.options.y - this.gravity,
-    this.options.width,
-    this.options.height);
+    this.width,
+    this.height,
+    this.x,
+    this.y - this.gravity,
+    this.width,
+    this.height);
 ```
 
 이미지 frame update code
@@ -75,26 +75,16 @@ numberOfFrames = 사용하고있는 이미지 frame
 ### Image update
 ```javascript
 update() {
-    let frameIndex = this.options.frameIndex || 0;
-    let tickCount = this.options.tickCount || 0;
-    let ticksperFrame = this.options.ticksperFrame || 0;
-    let numberOfFrames = this.options.numberOfFrames || 1;
+    this.tickCount += 1;
+        if (this.tickCount > this.ticksperFrame) {
+            this.tickCount = 0;
 
-    tickCount += 1;
-    if (tickCount > ticksperFrame) {
-        tickCount = 0;
-
-        if (frameIndex < numberOfFrames - 1) {
-            frameIndex +=1;
-        } else {
-            frameIndex = 0;
+            if (this.frameIndex < this.numberOfFrames - 1) {
+                this.frameIndex +=1;
+            } else {
+                this.frameIndex = 0;
+            }
         }
-    }
-
-    this.options.frameIndex = frameIndex;
-    this.options.tickCount = tickCount;
-    this.options.ticksperFrame = ticksperFrame;
-    this.options.numberOfFrames = numberOfFrames;
 }
 ```
 
