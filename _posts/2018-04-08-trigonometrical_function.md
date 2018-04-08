@@ -28,7 +28,7 @@ author: "Yeon"
 45도 = 파이/4 <br>
 30도 = 파이/6 <br>
 
-#### 삼각함수
-
+#### 삼각비
+![삼각비 image](../image/삼각비.png)
 
 [참고: Trigonometrical function](https://www.inflearn.com/course-status-2/)
