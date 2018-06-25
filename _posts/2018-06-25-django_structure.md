@@ -6,6 +6,8 @@ author: "Yeon"
 
 # Django 란?
 파이썬으로 만들어진 무료 오픈소스 웹 애플리케이션 프레임워크(web application framework)입니다파이썬으로 만들어진 무료 오픈소스 웹 애플리케이션 프레임워크(web application framework)
+## Django MTV 패턴
+- model, template, view
 ![MTV 패턴](../image/mtv_pattern.png)
 
 ## Django 구조
@@ -69,4 +71,4 @@ $ python manage.py startapp app
 - viewmixins.py: 뷰 모듈과 패키지를 더 가볍게하기 위해 뷰 믹스인을 이 모듈로 이전 <br>
 
 
-[참고: 파이썬 플라스크 프레임워크 소개](https://code.tutsplus.com/ko/tutorials/an-introduction-to-pythons-flask-framework--net-28822)
+[참고: Django 프로제그 및 앱 구조](https://wikidocs.net/6609)
