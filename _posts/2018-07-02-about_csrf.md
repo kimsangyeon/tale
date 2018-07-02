@@ -15,7 +15,13 @@ author: "Yeon"
 모든 POST 방식의 폼 전송에는 hidden 필드로 세션에 따른 임의 키값을 전송하여 유효한 키값인 확인.
 #### 사용방법
 ##### 첫번째: setting.py에 미웨에어 추가
-
+```python
+MIDDLEWARE_CLASSES = (
+    #..
+    "django.middleware.csrf.CsrfViewMiddleware",
+    #..
+)
+```
 
 ##### 두번째: form 태그가 있는 템플릿에 {% csrf-token %} 입력
 ```HTML
