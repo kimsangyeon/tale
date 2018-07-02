@@ -24,13 +24,15 @@ MIDDLEWARE_CLASSES = (
 ```
 ##### 두번째: form 태그가 있는 템플릿에 {% csrf-token %} 입력
 ```HTML
-<form method="post" action="'">{% csrf_token %}
+<form method="post" action="">{% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="저장"/>
 </form>
 ```
 ##### 세번째: 만일 미들웨어를 쓸수 없는 경우 @csrf_protect 장식자(decorator) 사용
 ```python
+from django.views.decorators.csrf import csrf_protect
+
 @csrf_protect
 def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -39,6 +41,8 @@ def post_remove(request, pk):
 ```
 ##### 특정 뷰에 대해 csrf를 적용하고 싶지 않다면 @csrf_exampt 장식자(decorator) 사용
 ```python
+from django.views.decorators.csrf import csrf_exempt
+
 @csrf_exampt
 def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
