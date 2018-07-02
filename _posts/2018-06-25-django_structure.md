@@ -70,5 +70,6 @@ $ python manage.py startapp app
 - signals.py: 커스텀 시그널 <br>
 - viewmixins.py: 뷰 모듈과 패키지를 더 가볍게하기 위해 뷰 믹스인을 이 모듈로 이전 <br>
 
+<br><br><br><br><br><br>
 
 [참고: Django 프로제그 및 앱 구조](https://wikidocs.net/6609)
