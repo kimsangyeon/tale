@@ -31,6 +31,26 @@ MIDDLEWARE_CLASSES = (
 </form>
 ```
 
+##### 세번째: 만일 미들웨어를 쓸수 없는 경우 @csrf_protect 장식자(decorator) 사용
+```python
+from django.views.decorators.csrf import csrf_protect
 
+@csrf_protect
+def post_remove(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    post.delete()
+    return redirect('post_list')
+```
+
+##### 특정 뷰에 대해 csrf를 적용하고 싶지 않다면 @csrf_exampt 장식자(decorator) 사용
+```python
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exampt
+def post_remove(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    post.delete()
+    return redirect('post_list')
+```
 
 [참고: Django CSRF 문](http://heiswed.tistory.com/entry/%EC%9E%A5%EA%B3%A0Django-%EA%B0%9C%EB%B0%9C-%ED%8F%BCForm-%EA%B4%80%EB%A6%AC%EC%99%80-CSRF-%EC%B7%A8%EC%95%BD%EC%A0%90-%ED%95%B4%EA%B2%B0)
