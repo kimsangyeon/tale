@@ -14,6 +14,13 @@ author: "Yeon"
 장고에서는 1.2 버전부터 CSRF 취약점을 막는 CSRF 토큰 방식을 제공. <br>
 모든 POST 방식의 폼 전송에는 hidden 필드로 세션에 따른 임의 키값을 전송하여 유효한 키값인 확인.
 #### 사용방법
-
+##### 첫번째: setting.py에 미웨에어 추가
+```python
+MIDDLEWARE_CLASSES = (
+    #..
+    'django.middleware.csrf.CsrfViewMiddleware',
+    #..
+)
+```
 
 [참고: Django CSRF 문](http://heiswed.tistory.com/entry/%EC%9E%A5%EA%B3%A0Django-%EA%B0%9C%EB%B0%9C-%ED%8F%BCForm-%EA%B4%80%EB%A6%AC%EC%99%80-CSRF-%EC%B7%A8%EC%95%BD%EC%A0%90-%ED%95%B4%EA%B2%B0)
