@@ -50,6 +50,4 @@ def post_remove(request, pk):
     return redirect('post_list')
 ```
 
-<br><br><br><br><br><br>
-
 [참고: Django CSRF 문](http://heiswed.tistory.com/entry/%EC%9E%A5%EA%B3%A0Django-%EA%B0%9C%EB%B0%9C-%ED%8F%BCForm-%EA%B4%80%EB%A6%AC%EC%99%80-CSRF-%EC%B7%A8%EC%95%BD%EC%A0%90-%ED%95%B4%EA%B2%B0)
