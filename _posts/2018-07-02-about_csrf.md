@@ -24,12 +24,7 @@ MIDDLEWARE_CLASSES = (
 ```
 
 ##### 두번째: form 태그가 있는 템플릿에 {% csrf-token %} 입력
-```HTML
-<form method="post" action="">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="저장"/>
-</form>
-```
+
 
 ##### 세번째: 만일 미들웨어를 쓸수 없는 경우 @csrf_protect 장식자(decorator) 사용
 ```python
