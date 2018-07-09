@@ -6,8 +6,8 @@ author: "Yeon"
 
 # Django Widget
 
-## Widget 정의
-- 위젯은 Django가 HTML 입력 요소를 표현한 것입니다. 위젯은 HTML 렌더링을 처리하고 위젯에 해당하는 GET/POST에서 데이터를 추출합니다.
+## Widget
+> 위젯은 Django가 HTML 입력 요소를 표현한 것입니다. 위젯은 HTML 렌더링을 처리하고 위젯에 해당하는 GET/POST에서 데이터를 추출합니다.
 
 ### Form
 - 장고의 Feature중 하나
