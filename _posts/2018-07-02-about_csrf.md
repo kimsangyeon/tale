@@ -10,10 +10,18 @@ author: "Yeon"
 - 사이트 간 요청 위조(또는 크로스 사이트 요청 위조, 영어: Cross-site request forgery, CSRF, XSRF)는 웹사이트 취약점 공격의 하나로, 사용자가 자신의 의지와는 무관하게 공격자가 의도한 행위(수정, 삭제, 등록 등)를 특정 웹사이트에 요청하게 하는 공격을 말한다.
   유명 경매 사이트인 옥션에서 발생한 개인정보 유출 사건에서 사용된 공격 방식 중 하나다. [위키백과](https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B4%ED%8A%B8_%EA%B0%84_%EC%9A%94%EC%B2%AD_%EC%9C%84%EC%A1%B0)
 
-## CSRF DJANGO
+### CSRF DJANGO
 장고에서는 1.2 버전부터 CSRF 취약점을 막는 CSRF 토큰 방식을 제공. <br>
 모든 POST 방식의 폼 전송에는 hidden 필드로 세션에 따른 임의 키값을 전송하여 유효한 키값인 확인.
 #### 사용방법
+##### 첫번째: setting.py에 미웨에어 추가
+```python
+MIDDLEWARE_CLASSES = (
+    #..
+    "django.middleware.csrf.CsrfViewMiddleware",
+    #..
+)
+```
 
 ##### 두번째: form 태그가 있는 템플릿에 {% csrf-token %} 입력
 ```HTML
